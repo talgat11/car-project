@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.legends {
+  border: 1px solid black;
+}
+.modal .modal-content {
+  top: 60px;
+  left: 600px;
+}
+agm-map {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+.custombar2 .ui-scrollpanel-wrapper {
+  border-right: 9px solid #757575;
+  border-bottom: 9px solid #757575;
+}
+
+.custombar2 .ui-scrollpanel-bar {
+  background-color: #68C77D;
+  border-radius: 0;
+  opacity: 1;
+  transition: background-color .3s;
+}
+
+.custombar2:hover .ui-scrollpanel-bar {
+  background-color: #46A55A;
+}
+

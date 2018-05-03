@@ -1,0 +1,177 @@
+{
+  "cars": [
+    {
+      "VIN": "1",
+      "model": "Megan_RS",
+      "dist": "100 [km]",
+      "type": "ICE",
+      "average": "15 [km/h",
+      "total": "124151 [km]",
+      "status": "assets/green_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/blue_car.png",
+      "locker":"assets/close.png"
+    },
+    {
+      "VIN": "2",
+      "model": "Twingo",
+      "dist": "25 [km]",
+      "type": "ICE",
+      "average": "18.4 [km/h]",
+      "total": "19331 [km]",
+      "status": "assets/green_empty_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/green_car.png",
+      "locker":"assets/open.png"
+    },
+    {
+      "VIN": "3",
+      "model": "Clio_RS",
+      "dist": "130 [km]",
+      "type": "ICE",
+      "average": "17 [km/h]",
+      "total": "29312 [km]",
+      "status": "assets/red_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/red_car.png",
+      "locker":"assets/close.png"
+    },
+    {
+      "VIN": "4",
+      "model": "Kangoo",
+      "dist": "200 [km]",
+      "type": "ICE",
+      "average": "10 [km/h]",
+      "total": "89132 [km]",
+      "status": "assets/green_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/grey_car.png",
+      "locker":"assets/close.png"
+    },
+    {
+      "VIN": "5",
+      "model": "Twizy",
+      "dist": "50 [km]",
+      "type": "Electric",
+      "average": "16 [km/h]",
+      "total": "41404 [km]",
+      "status": "assets/green_empty_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/purple_car.png",
+      "locker":"assets/open.png"
+    },
+    {
+      "VIN": "",
+      "model": "",
+      "dist": "",
+      "type": "",
+      "average": "",
+      "total": "",
+      "status": "",
+      "details": "",
+      "heading": "",
+      "distance_empty": "",
+      "speed": "",
+      "wheel_speed": "",
+      "image": "assets/white_car.png",
+      "locker":"assets/close.png"
+
+    }
+  ],
+  "caption": [
+    {
+      "image": "../assets/green_full_dot.png",
+      "name": "Data's reception ok"
+    },
+    {
+      "image": "../assets/red_full_dot.png",
+      "name": "Data's reception not ok"
+    },
+    {
+      "image": "../assets/black_empty_dot.png",
+      "name": "Vehicule turn off"
+    },
+    {
+      "image": "../assets/black_full_dot.png",
+      "name": "Vehicule turn on"
+    }
+  ],
+  "drivers": [
+    {
+      "name": "John Doe 1",
+      "comment": "New",
+      "status": "Driver",
+      "total": "123 [km]",
+      "hours": "10 [hours]",
+      "average": "45",
+      "VIN": "1",
+      "model": "Megan_RS",
+      "type": "ICE",
+      "dongel": "6875",
+      "start": "22.03.2014",
+      "stop": "04.06.2016"
+    },
+    {
+      "name": "John Doe 2",
+      "comment": "New",
+      "status": "Driver",
+      "total": "456 [km]",
+      "hours": "3 [hours]",
+      "average": "56",
+      "VIN": "2",
+      "model": "Twingo",
+      "type": "ICE",
+      "dongel": "2346",
+      "start": "11.09.2010",
+      "stop": "11.01.2012"
+    },
+    {
+      "name": "John Doe 3",
+      "comment": "New",
+      "status": "Driver",
+      "total": "789 [km]",
+      "hours": "58 [hours]",
+      "average": "34",
+      "VIN": "3",
+      "model": "Clio_RS",
+      "type": "ICE",
+      "dongel": "4756",
+      "start": "11.08.2016",
+      "stop": "08.02.2019"
+    },
+    {
+      "name": "John Doe 4",
+      "comment": "New",
+      "status": "Driver",
+      "total": "123.65 [km]",
+      "hours": "5 [hours]",
+      "average": "87",
+      "VIN": "4",
+      "model": "Kangoo",
+      "type": "ICE",
+      "dongel": "1233",
+      "start": "11.10.2013",
+      "stop": "18.10.2013"
+    }
+  ]
+}

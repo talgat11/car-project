@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeneralService} from './general.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  data: any;
+
+  constructor(private generalService: GeneralService) {
+   generalService.getGeneral().subscribe(data => {
+     this.data = data;
+   });
+  }
 }

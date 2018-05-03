@@ -1,0 +1,72 @@
+
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr >
+      <th *ngFor="let title of head">{{title}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of data"> <!--*ngIf="filter()-->
+
+      <td>{{car.VIN}}</td>
+      <td>{{car.model}}</td>
+      <td>{{car.dist}}</td>
+      <td>{{car.type}}</td>
+      <td>{{car.average}}</td>
+      <td>{{car.total}}</td>
+      <td><img [src]="car.status" style="width: 25px"></td>
+      <td><button type="button" class="btn btn-dark" (click)="open(content, car)">Detail ></button></td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #content let-c="close" let-d="dismiss" class="modal custom-class">
+          <div class="modal-header">
+            <h4 class="model-title">Details</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+              <tr>
+                <th *ngFor="let title of modalTitle">
+                  {{title}}
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th>Type</th>
+                <td>{{modalCar.type}}</td>
+              </tr>
+              <tr>
+                <th>Heading</th>
+                <td>{{modalCar.heading}}</td>
+              </tr>
+              <tr>
+                <th>Distance to Empty</th>
+                <td>{{modalCar.distance_empty}}</td>
+              </tr>
+              <tr>
+                <th>Vehicle Speed</th>
+                <td>{{modalCar.speed}}</td>
+              </tr>
+              <tr>
+                <th>Average Fuel Consumption</th>
+                <td>{{modalCar.average}}</td>
+              </tr>
+              <tr>
+                <th>Wheel Speed Value FL</th>
+                <td>{{modalCar.wheel_speed}}</td>
+              </tr>
+              </tbody>
+            </table>
+            <img [src]="modalCar.image" style="width:50%; object-fit: contain; display: block; margin-right: auto; margin-left: auto" class="img-responsive">
+            <img [src]="modalCar.locker" style="width:10%; object-fit: contain; display: block; margin-right: auto; margin-left: auto" class="img-responsive">
+
+          </div>
+        </ng-template>
+
+
