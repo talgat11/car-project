@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import {DropdownModule} from 'primeng/primeng';
 import {CheckboxModule} from 'primeng/primeng';
 import {ScrollPanelModule} from 'primeng/primeng';
+import { CarsfilterPipe} from './carsfilter.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -20,11 +21,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GeneralComponent } from './general/general.component';
 import { CaptionComponent } from './caption/caption.component';
 import { AssignementsComponent } from './assignements/assignements.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { CarsPageComponent } from './pages/cars-page/cars-page.component';
 import { DriversPageComponent } from './pages/drivers-page/drivers-page.component';
 import { DongelsPageComponent } from './pages/dongels-page/dongels-page.component';
-
+import { ChartModule} from 'primeng/primeng';
+import {AgmSnazzyInfoWindowModule} from '@agm/snazzy-info-window';
 
 
 @NgModule({
@@ -39,20 +41,23 @@ import { DongelsPageComponent } from './pages/dongels-page/dongels-page.componen
     AssignementsComponent,
     CarsPageComponent,
     DriversPageComponent,
-    DongelsPageComponent
+    DongelsPageComponent,
+    CarsfilterPipe
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     MatDialogModule,
     AgmCoreModule.forRoot({apiKey: 'AIzaSyAKHtTtx2fqxZ_lY1ADZWTI-8jsUxZKQH8'}),
+    AgmSnazzyInfoWindowModule,
     HttpClientModule,
     SliderModule,
     FormsModule,
     DropdownModule,
     CheckboxModule,
     ScrollPanelModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartModule,
   ],
   providers: [
     GeneralService

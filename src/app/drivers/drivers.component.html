@@ -1,0 +1,151 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr >
+      <th *ngFor="let title of head">{{title}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let driver of data"> <!--*ngIf="filter()-->
+      <td>{{driver.name}}</td>
+      <td>{{driver.comment}}</td>
+      <td><button type="button" class="btn btn-dark" (click)="open(content, driver)">Detail ></button></td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #content let-c="close" let-d="dismiss" class="modal">
+  <div class="modal-header">
+    <h4 class="model-title">Details</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-g-6">
+      <table>
+        <tbody>
+        <tr class="ui-g">
+          <td class="ui-g-6"><b>Name:</b> {{modalDriver.name}}</td>
+          <td  class="ui-g-6"><b>Status:</b> Driver</td>
+        </tr>
+        <tr class="ui-g">
+          <td class="ui-g-6"><b>Total distance monitoring:</b> 472.5 [km]</td>
+          <td class="ui-g-6"><b># hours driving post 3 days:</b> 10 [hours]</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ui-g-6">
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th *ngFor="let title of modalTitle">
+                {{title}}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{modalDriver.VIN}}</td>
+              <td>{{modalDriver.model}}</td>
+              <td>{{modalDriver.type}}</td>
+              <td>{{modalDriver.dongel}}</td>
+              <td>{{modalDriver.start}}</td>
+              <td>{{modalDriver.stop}}</td>
+              <td>
+                <button type="button" class="btn btn-dark" (click)="removeItem(modalDriver); d('Cross click')">Remove</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-dark" (click)="openEdit(content, modalDriver)">Edit</button>
+              </td>
+            </tr>
+            <!--<tr>-->
+              <!--<td>-->
+                <!--<button type="button" class="btn btn-dark" (click)="createDriver(dataSize + 1)">Create new assignments</button>-->
+              <!--</td>-->
+            <!--</tr>-->
+            <ng-template #content let-c="close" let-d="dismiss" class="modal custom-class">
+              <div class="modal-header">
+                <h4 class="model-title">Edit</h4>
+                  <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                    <span aria-hidden="true">Confirm</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-striped current">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th *ngFor="let title of editTitle">
+                          {{title}}
+                        </th>
+                      </tr>
+                    </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input [(ngModel)]="modalDriver.VIN" placeholder="VIN">
+                      </td>
+                      <td>
+                        <input [(ngModel)]="modalDriver.model" placeholder="Model">
+                      </td>
+                      <td>
+                        <input [(ngModel)]="modalDriver.type" placeholder="Type">
+                      </td>
+                      <td>
+                        <input [(ngModel)]="modalDriver.dongel" placeholder="Dongel's ID">
+                      </td>
+                      <td>
+                        <input [(ngModel)]="modalDriver.start" placeholder="Date start">
+                      </td>
+                      <td>
+                        <input [(ngModel)]="modalDriver.stop" placeholder="Date stop">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ng-template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="ui-g-6">
+      <p-chart type="line" [data]="dataChart"></p-chart>
+    </div>
+    <div class="ui-g-6">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th *ngFor="let title of editTitle">
+              {{title}}
+            </th>
+            <th>
+              Details
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let driver of data">
+            <td>{{driver.VIN}}</td>
+            <td>{{driver.model}}</td>
+            <td>{{driver.type}}</td>
+            <td>{{driver.dongel}}</td>
+            <td>{{driver.start}}</td>
+            <td>{{driver.stop}}</td>
+            <td>
+              <button type="button" class="btn btn-dark">Detail ></button>
+            </td>
+          </tr>
+          <tr>
+            <!--<td>-->
+              <!--<button type="button" class="btn btn-dark" (click)="createDriver(dataSize + 1)">Create new assignments</button>-->
+            <!--</td>-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>
+
+

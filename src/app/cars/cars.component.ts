@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {ActivatedRoute} from '@angular/router';
+import {isNumber} from '@ng-bootstrap/ng-bootstrap/util/util';
 
 @Component({
   selector: 'app-cars',
@@ -9,14 +11,27 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class CarsComponent implements OnInit {
 
   @Input() data: any;
+  @Input() emptyValues: any;
+
+  e
 
   head = ['VIN', 'Model', 'Dist. empt.', 'Type', 'Average', 'Total Distance', 'Ignition Status', 'Details'];
   modalTitle = ['Signal name', 'Value'];
+  map = {
+    marker1: {
+      'lat': 46.795790,
+      'lng': 7.158699
+    },
+    marker2: {
+      'lat': 46.802429,
+      'lng': 7.151232
+    }
+  };
 
   closeResult: string;
   modalCar: object;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
@@ -44,9 +59,8 @@ export class CarsComponent implements OnInit {
     return this.data.valueOf(item);
   }
 
-  filters() {
 
-  }
+
 
 
 

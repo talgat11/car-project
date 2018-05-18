@@ -1,15 +1,11 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+/*img {*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*width: 50%;*/
+/*}*/
 .legends {
   border: 1px solid black;
-}
-.modal .modal-content {
-  top: 60px;
-  left: 600px;
 }
 agm-map {
   position: relative;
@@ -30,5 +26,25 @@ agm-map {
 
 .custombar2:hover .ui-scrollpanel-bar {
   background-color: #46A55A;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.custom-class > .modal-dialog {
+    max-width: 1790px !important;
+    min-width: 1200px !important;
+    width: 100% !important;
+}
+.ui-slider {
+  position: fixed;
+  left: 50px;
+}
+agm-marker {
+  width: 100px;
 }
 

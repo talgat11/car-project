@@ -1,5 +1,19 @@
+<div class="map">
+  <agm-map [latitude]="46.793527" [longitude]="7.159088" [zoom]="15">
+    <agm-marker *ngFor="let position of data" [latitude]="position.lat" [longitude]="position.lng" [iconUrl]="position.status" [label]="position.VIN">
+      <!--<agm-info-window>-->
+        <!--<img [src]="position.image" style="width:50%; object-fit: contain; display: block; margin-right: auto; margin-left: auto" class="img-responsive">-->
+      <!--</agm-info-window>-->
 
+      <agm-snazzy-info-window [closeWhenOthersOpen]="true">
+        <ng-template>
+        <img [src]="position.image" style=" width: 138px; height: 123px; object-fit: contain; display: block; margin-right: auto; margin-left: auto" class="img-responsive">
+          </ng-template>
+      </agm-snazzy-info-window>
 
+    </agm-marker>
+  </agm-map>
+</div>
 <table class="table table-striped">
   <thead class="thead-dark">
     <tr >
@@ -20,7 +34,7 @@
     </tr>
   </tbody>
 </table>
-<ng-template #content let-c="close" let-d="dismiss" class="modal custom-class">
+<ng-template #content let-c="close" let-d="dismiss" class="modal-car custom-class">
           <div class="modal-header">
             <h4 class="model-title">Details</h4>
             <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">

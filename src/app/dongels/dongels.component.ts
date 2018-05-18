@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-dongels',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DongelsComponent implements OnInit {
 
+  @Input() data: any;
+
+  modalDongel: object;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getDongel(item) {
+    return this.data.valueOf(item);
   }
 
 }

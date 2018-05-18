@@ -3,7 +3,7 @@
     {
       "VIN": "1",
       "model": "Megan_RS",
-      "dist": "100 [km]",
+      "dist": 100,
       "type": "ICE",
       "average": "15 [km/h",
       "total": "124151 [km]",
@@ -14,12 +14,16 @@
       "speed": "43 [km/h]",
       "wheel_speed": "300 [rpm]",
       "image": "assets/blue_car.png",
-      "locker":"assets/close.png"
+      "locker":"assets/close.png",
+      "lat": 46.794702,
+      "lng": 7.156691,
+      "country": "Switzerland",
+      "town": "Fribourg"
     },
     {
       "VIN": "2",
       "model": "Twingo",
-      "dist": "25 [km]",
+      "dist": 25,
       "type": "ICE",
       "average": "18.4 [km/h]",
       "total": "19331 [km]",
@@ -30,12 +34,16 @@
       "speed": "43 [km/h]",
       "wheel_speed": "300 [rpm]",
       "image": "assets/green_car.png",
-      "locker":"assets/open.png"
+      "locker":"assets/open.png",
+      "lat": 46.793115,
+      "lng": 7.158150,
+      "country": "Switzerland",
+      "town": "Fribourg"
     },
     {
       "VIN": "3",
       "model": "Clio_RS",
-      "dist": "130 [km]",
+      "dist": 130,
       "type": "ICE",
       "average": "17 [km/h]",
       "total": "29312 [km]",
@@ -46,12 +54,16 @@
       "speed": "43 [km/h]",
       "wheel_speed": "300 [rpm]",
       "image": "assets/red_car.png",
-      "locker":"assets/close.png"
+      "locker":"assets/close.png",
+      "lat": 46.791792,
+      "lng": 7.159008,
+      "country": "Switzerland",
+      "town": "Fribourg"
     },
     {
       "VIN": "4",
       "model": "Kangoo",
-      "dist": "200 [km]",
+      "dist": 200,
       "type": "ICE",
       "average": "10 [km/h]",
       "total": "89132 [km]",
@@ -62,12 +74,16 @@
       "speed": "43 [km/h]",
       "wheel_speed": "300 [rpm]",
       "image": "assets/grey_car.png",
-      "locker":"assets/close.png"
+      "locker":"assets/close.png",
+      "lat": 46.795552,
+      "lng": 7.158064,
+      "country": "Switzerland",
+      "town": "Fribourg"
     },
     {
       "VIN": "5",
       "model": "Twizy",
-      "dist": "50 [km]",
+      "dist": 50,
       "type": "Electric",
       "average": "16 [km/h]",
       "total": "41404 [km]",
@@ -78,12 +94,16 @@
       "speed": "43 [km/h]",
       "wheel_speed": "300 [rpm]",
       "image": "assets/purple_car.png",
-      "locker":"assets/open.png"
+      "locker":"assets/open.png",
+      "lat": 46.796521,
+      "lng": 7.154030,
+      "country": "Switzerland",
+      "town": "Fribourg"
     },
     {
       "VIN": "",
       "model": "",
-      "dist": "",
+      "dist": 0,
       "type": "",
       "average": "",
       "total": "",
@@ -94,8 +114,9 @@
       "speed": "",
       "wheel_speed": "",
       "image": "assets/white_car.png",
-      "locker":"assets/close.png"
-
+      "locker":"assets/close.png",
+      "country": "Switzerland",
+      "town": "Fribourg"
     }
   ],
   "caption": [
@@ -173,5 +194,187 @@
       "start": "11.10.2013",
       "stop": "18.10.2013"
     }
+  ],
+  "dongel": [
+    {
+      "name": "Dongel1",
+      "ID": "1234",
+      "driver": "John Doe 9",
+      "car": "Geneva18_Clio",
+      "start": "03.03.2018",
+      "stop": "03.08.2018"
+    },
+    {
+      "name": "Dongel2",
+      "ID": "1235",
+      "driver": "John Doe 10",
+      "car": "Expo1_Twingo",
+      "start": "05.02.2015",
+      "stop": "05.06.2015"
+    },
+    {
+      "name": "Dongel3",
+      "ID": "1236",
+      "driver": "John Doe 14",
+      "car": "Geneva16_Twizy",
+      "start": "02.01.2016",
+      "stop": "03.06.2017"
+    },
+    {
+      "name": "Dongel4",
+      "ID": "1237",
+      "driver": "Jonh Doe 26",
+      "car": "Geneva17_Kangoo",
+      "start": "08.02.2015",
+      "stop": "09.06.2016"
+    },
+    {
+      "name": "Dongel5",
+      "ID": "1238",
+      "driver": "Jonh Doe 16",
+      "car": "Expo5_MeganRS",
+      "start": "02.01.2013",
+      "stop": "02.02.2014"
+    }
+  ],
+  "all": {
+     "cars": [
+    {
+      "VIN": "1",
+      "model": "Megan_RS",
+      "dist": 100,
+      "type": "ICE",
+      "average": "15 [km/h",
+      "total": "124151 [km]",
+      "status": "assets/green_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/blue_car.png",
+      "locker":"assets/close.png",
+      "lat": 46.794702,
+      "lng": 7.156691,
+      "country": "Switzerland",
+      "town": "Fribourg"
+    },
+    {
+      "VIN": "2",
+      "model": "Twingo",
+      "dist": 25,
+      "type": "ICE",
+      "average": "18.4 [km/h]",
+      "total": "19331 [km]",
+      "status": "assets/green_empty_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/green_car.png",
+      "locker":"assets/open.png",
+      "lat": 46.793115,
+      "lng": 7.158150,
+      "country": "Switzerland",
+      "town": "Fribourg"
+    },
+    {
+      "VIN": "3",
+      "model": "Clio_RS",
+      "dist": 130,
+      "type": "ICE",
+      "average": "17 [km/h]",
+      "total": "29312 [km]",
+      "status": "assets/red_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/red_car.png",
+      "locker":"assets/close.png",
+      "lat": 46.791792,
+      "lng": 7.159008,
+      "country": "Switzerland",
+      "town": "Fribourg"
+    },
+    {
+      "VIN": "4",
+      "model": "Kangoo",
+      "dist": 200,
+      "type": "ICE",
+      "average": "10 [km/h]",
+      "total": "89132 [km]",
+      "status": "assets/green_full_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/grey_car.png",
+      "locker":"assets/close.png",
+      "lat": 46.795552,
+      "lng": 7.158064,
+      "country": "Switzerland",
+      "town": "Fribourg"
+    },
+    {
+      "VIN": "5",
+      "model": "Twizy",
+      "dist": 50,
+      "type": "Electric",
+      "average": "16 [km/h]",
+      "total": "41404 [km]",
+      "status": "assets/green_empty_dot.png",
+      "details": "",
+      "heading": "204.51 [degrees]",
+      "distance_empty": "100 [km]",
+      "speed": "43 [km/h]",
+      "wheel_speed": "300 [rpm]",
+      "image": "assets/purple_car.png",
+      "locker":"assets/open.png",
+      "lat": 46.796521,
+      "lng": 7.154030,
+      "country": "Switzerland",
+      "town": "Fribourg"
+    },
+    {
+      "VIN": "",
+      "model": "",
+      "dist": 0,
+      "type": "",
+      "average": "",
+      "total": "",
+      "status": "",
+      "details": "",
+      "heading": "",
+      "distance_empty": "",
+      "speed": "",
+      "wheel_speed": "",
+      "image": "assets/white_car.png",
+      "locker":"assets/close.png",
+      "country": "Switzerland",
+      "town": "Fribourg"
+    }
+  ],
+  "caption": [
+    {
+      "image": "../assets/green_full_dot.png",
+      "name": "Data's reception ok"
+    },
+    {
+      "image": "../assets/red_full_dot.png",
+      "name": "Data's reception not ok"
+    },
+    {
+      "image": "../assets/black_empty_dot.png",
+      "name": "Vehicule turn off"
+    },
+    {
+      "image": "../assets/black_full_dot.png",
+      "name": "Vehicule turn on"
+    }
   ]
+  }
 }

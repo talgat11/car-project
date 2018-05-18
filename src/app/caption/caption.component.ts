@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SelectItem} from 'primeng/api';
 
 @Component({
@@ -10,15 +10,15 @@ import {SelectItem} from 'primeng/api';
 export class CaptionComponent implements OnInit {
 
   @Input() data: any;
-    value: object;
+  @Output() event: EventEmitter<any> = new EventEmitter();
 
-    towns: SelectItem[];
+  filterargs = {title: 'hello'};
+  items = [{title: 'hello world'}, {title: 'hello kitty'}, {title: 'foo bar'}];
 
-    selectedTown: string;
-
-    selectedCountry: string;
-
-    countries: SelectItem[];
+  towns: SelectItem[];
+  selectedTown: string;
+  selectedCountry: string;
+  countries: SelectItem[];
 
   emptyValues: number[] = [10, 200];
   fuelValues: number[] = [10, 19];
@@ -60,12 +60,16 @@ export class CaptionComponent implements OnInit {
         {label: 'London', value: 'LDN'},
         {label: 'Istanbul', value: 'IST'},
         {label: 'Paris', value: 'PRS'},
+        {label: 'Fribourg', value: 'FRI'},
         {label: 'All towns', value: 'ALL'}
     ];
   }
 
   filter() {
     console.log(this.emptyValues);
+    if (this.emptyValues) {
+      this.event.emit(this.emptyValues);
+    }
   }
 
   ngOnInit() {

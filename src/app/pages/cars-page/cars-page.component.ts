@@ -16,6 +16,28 @@ export class CarsPageComponent implements OnInit {
    });
   }
 
+  onEvent(event) {
+    console.log(event);
+    this.data.cars.push({
+      'VIN': '',
+      'model': '',
+      'dist': 0,
+      'type': '',
+      'average': '',
+      'total': '',
+      'status': '',
+      'details': '',
+      'heading': '',
+      'distance_empty': '',
+      'speed': '',
+      'wheel_speed': '',
+      'image': 'assets/white_car.png',
+      'locker': 'assets/close.png',
+      'country': 'Switzerland',
+      'town': 'Fribourg'
+    });
+  }
+
   ngOnInit() {
   }
 

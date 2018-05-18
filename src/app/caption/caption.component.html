@@ -54,7 +54,7 @@
     <div class="ui-g-10 ui-md-6 ui-lg-2"><p-checkbox name="group1" value="ICE" label="ICE" [(ngModel)]="selectedItems" inputId="ice"></p-checkbox></div>
     <div class="ui-g-10 ui-md-6 ui-lg-2"><p-checkbox name="group1" value="Hybrid" label="Hybrid" [(ngModel)]="selectedItems" inputId="hybrid"></p-checkbox></div>
     <div class="ui-g-10 ui-md-6 ui-lg-2"><p-checkbox name="group1" value="Electric" label="Electric" [(ngModel)]="selectedItems" inputId="electric"></p-checkbox></div>
-         <button type="button" class="btn btn-dark ui-g-12 ui-md-6 ui-lg-2" style="height: 35px; width: 120px">Search</button>
+         <button type="button" class="btn btn-dark ui-g-12 ui-md-6 ui-lg-2" style="height: 35px; width: 120px" (click)="filter()" >Search</button>
 </div>
      </div>
     </div>
@@ -68,7 +68,7 @@
 
 <div class="ui-g-12 ui-md-6 ui-lg-2" style="margin-left: 50px">Status legend: </div>
 
-  <div *ngFor="let legends of data" class="ui-g-12 ui-md-6 ui-lg-2">
+  <div *ngFor="let legends of data.caption" class="ui-g-12 ui-md-6 ui-lg-2">
       <img [src]="legends.image" style="width: 10%; margin-bottom: -25px; margin-left: 170px">
       {{legends.name}}
       </div>
