@@ -13,7 +13,7 @@ export class CarsComponent implements OnInit {
   @Input() data: any;
   @Input() emptyValues: any;
 
-  e
+
 
   head = ['VIN', 'Model', 'Dist. empt.', 'Type', 'Average', 'Total Distance', 'Ignition Status', 'Details'];
   modalTitle = ['Signal name', 'Value'];
